@@ -64,4 +64,95 @@ using string concat() method. .*/
 var firstName = prompt("Enter your first name");
 var lastName = prompt("Enter your last name");
 var fullName = firstName.concat(" ", lastName);
-document.write("Hello, " + fullName + "! Nice to meet you.");
+document.write("Hello, " + fullName + "! Nice to meet you." + "</br ></br >");
+
+/*Question:07
+Write a program to replace the “Hyder” to “Islam” in the
+word “Hyderabad” and display the result in your browser. .*/
+
+let city = "Hyderabad"
+document.write("City is " + city + "</br>")
+let userCity = prompt("Enter your city")
+let replaceCity = city.replace(userCity)
+document.write("User replace city by " + replaceCity + "</br ></br >")
+
+/*Question:08
+Write a program to replace all occurrences of “and” in the
+string with “&” and display the result in your browser.
+var message = “Ali and Sami are best friends. They play cricket and
+football together.”; */
+
+
+
+/*Question:09
+Write a program that converts a string “472” to a number
+472. Display the values & types in your browser. */
+
+let num = "472"
+document.write("Value " + num + "</br>")
+document.write("Type of " + num + " is " + typeof (num) + "</br>")
+document.write("Value " + num + "</br>")
+let toNum = parseInt(num, 10)
+document.write("Now type of " + num + " is " + typeof (toNum) + "</br ></br >")
+
+
+/*Question:10
+Write a program that takes user input. Convert and
+show the input in capital letters. */
+
+let userText = prompt("Enter some text")
+document.write("User Input: " + userText + "</br>")
+let caseChange = userText.toUpperCase()
+document.write("UpperCase: " + caseChange + "</br ></br >")
+
+
+/*Question:11
+Write a program that takes user input. Convert and
+show the input in title case. */
+
+
+let userInput = prompt("Enter your Favourite Language")
+document.write("Userinpt: " + userInput + "</br>")
+let toArray = userInput.split(" ")
+let titledCase = []
+for (i = 0; i < toArray.length; i++) {
+    titledCase.push(toArray[i][0].toUpperCase() + toArray[i].slice(1).toLowerCase())
+
+}
+let final = titledCase.join(" ")
+document.write("TileCase: " + final + "</br ></br >")
+
+
+/*Question:12
+Write a program that converts the variable num to
+string.
+var num = 35.36 ;
+Remove the dot to display “3536” display in your browser.. */
+
+
+let decimalValve = 35.36
+document.write("Decimal value is " + decimalValve + "</br>")
+let toStr = decimalValve.toString
+document.write("Change into string " + toStr + "</br ></br >")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
