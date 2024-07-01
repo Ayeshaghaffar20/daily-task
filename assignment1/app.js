@@ -73,7 +73,7 @@ word “Hyderabad” and display the result in your browser. .*/
 let city = "Hyderabad"
 document.write("City is " + city + "</br>")
 let userCity = prompt("Enter your city")
-let replaceCity = city.replace(userCity)
+let replaceCity = city.replace(city, userCity)
 document.write("User replace city by " + replaceCity + "</br ></br >")
 
 /*Question:08
@@ -82,6 +82,11 @@ string with “&” and display the result in your browser.
 var message = “Ali and Sami are best friends. They play cricket and
 football together.”; */
 
+
+let message = "Ali and Sami are best friends. They play cricket and football together"
+document.write(message + "</br>")
+let repalceWord = message.replaceAll("and", "&")
+document.write(repalceWord + "</br ></br >")
 
 
 /*Question:09
