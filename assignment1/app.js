@@ -142,6 +142,25 @@ document.write("Change into string " + toStr + "</br ></br >")
 
 
 
+/*Question:12
+Write a program to take user input and store username
+in a variable. If the username contains any special symbol
+among [@ . , !], prompt the user to enter a valid username. */
+
+
+let yourGoodName = prompt("Enter your Good Name")
+let specialChar = ["@", "$", "!", "#", "%", "&", "*"]
+for (let i = 0; i < specialChar; i++) {
+    if (yourGoodName == specialChar) {
+        document.write("Sorry! Please enter a valid username")
+    }
+    else {
+        document.write("Your Good name " + yourGoodName + "</br ></br >")
+    }
+}
+
+
+
 
 
 
