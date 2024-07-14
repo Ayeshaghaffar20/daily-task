@@ -130,14 +130,32 @@ console.log(todayDate)
 // EXPECTED OUTPUT: 'The Quick Brown Fox'
 
 
-function change() {
-    let userName = prompt("Enter any Sentence")
-    let joinName = userName.split(" ")
-    let titleCase = []
-    for (let i = 0; i < joinName.length; i++) {
-        titleCase.push(joinName[i][0].toUpperCase() + joinName[i].slice(1).toLowerCase())
+// function change() {
+//     let userName = prompt("Enter any Sentence")
+//     let joinName = userName.split(" ")
+//     let titleCase = []
+//     for (let i = 0; i < joinName.length; i++) {
+//         titleCase.push(joinName[i][0].toUpperCase() + joinName[i].slice(1).toLowerCase())
+//     }
+//     let result = titleCase.join(" ")
+//     document.write(result + "</br></br>");
+// }
+// change()
+
+//Question:12
+// Write a JavaScript function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING: 'Web Development Tutorial'
+// EXPECTED OUTPUT: 'Development'
+
+function longest(string) {
+    let spilt = string.spilt(" ")
+    let first = spilt[0].lenght;
+    for (let i = 0; i < spilt.lenght; i++) {
+        if (first < split[i].lenght) {
+            first = spilt[i]
+
+        }
     }
-    let result = titleCase.join(" ")
-    document.write(result + "</br></br>");
+
 }
-change()
